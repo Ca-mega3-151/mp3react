@@ -1,0 +1,109 @@
+
+.App {
+  background-color: rebeccapurple;
+} 
+
+/* Định dạng các phần tử bài hát */
+.App div.footer-mp3 {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  height: 60px;
+
+}
+
+
+
+/* Định dạng nút điều khiển */
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hiển thị trạng thái đang phát của bài hát */
+.App div.playing {
+  font-weight: bold;
+}
+
+/* Ẩn nút điều khiển khi không có bài hát nào được chọn */
+.App button[disabled] {
+  display: none;
+}
+
+/* CSS cho phần tử bài hát đang phát */
+.App .song-item.playing {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.App .song-item.playing:hover {
+  background-color: #e0e0e0;
+}
+
+.footer-mp3{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0px 20px;
+  
+}
+
+.list_song {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.cover-song {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 95vh;
+}
+
+.img-cover-footer {
+  border-radius: 50%;
+}
+.flex {
+  display: flex;
+}
+
+.info-song {
+  margin-left: 10px;
+  height: 50px;
+}
+
+.info-song h5 {
+  font-size: 14px;
+}
+
+.info-song p {
+  font-size: 12px;
+}
+
+.right-footer {
+  width: 150px;
+  height: 50px;
+}
+.volume-slider {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
